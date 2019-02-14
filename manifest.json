@@ -1,0 +1,14 @@
+{
+    "name": "ChromeEx",
+    "version": "1.0",
+    "description": "My Chrome Extension!",
+    "manifest_version": 2,
+    "incognito": "split",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "content_scripts": [{
+        "js": ["contentscript.js"],
+        "matches": ["http://*/*", "https://*/*"]
+    }]
+  }
